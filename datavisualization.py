@@ -21,8 +21,8 @@ def data_visualization():
         fig.update_layout(template='plotly_dark')
         fig.update_xaxes(showgrid=False)
         fig.update_yaxes(showgrid=False)
-        fig.show()
-        #fig.write_image(f"{letters[count]}count_{i}.jpg")
+        #fig.show()
+        fig.write_image(f"{letters[count]}count_{i}.jpg")
         
     
     names=["carat","depth","table","price","x","y","z"]
@@ -33,15 +33,15 @@ def data_visualization():
         fig.update_layout(template='plotly_dark')
         fig.update_xaxes(showgrid=False,zeroline=False)
         fig.update_yaxes(showgrid=False,zeroline=False)
-        fig.show()
-        #fig.write_image(f"{letters[count]}box_{j}.jpg")
+        #fig.show()
+        fig.write_image(f"{letters[count]}box_{j}.jpg")
 
         fig = ff.create_distplot([data[j].values],group_labels=[j])
         fig.update_layout(template='plotly_dark')
         fig.update_xaxes(showgrid=False,zeroline=False)
         fig.update_yaxes(showgrid=False,zeroline=False)
-        fig.show()
-        #fig.write_image(f"{letters[count]}_dist_{j}.jpg")
+        #fig.show()
+        fig.write_image(f"{letters[count]}_dist_{j}.jpg")
        
     return data
 
